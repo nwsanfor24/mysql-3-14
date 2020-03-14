@@ -3,11 +3,15 @@ CREATE DATABASE topsongs_DB;
 
 USE topsongs_DB;
 
-CREATE TABLE auctions(
+CREATE TABLE Top5000(
     id INT NOT NULL AUTO_INCREMENT,
-    item_name VARCHAR(100) NOT NULL,
-    category VARCHAR(45) NOT NULL,
-    starting_bid INT default 0,
-    highest_bid INT default 0,
+    artist VARCHAR(100) NOT NULL,
+    song VARCHAR(45) NOT NULL,
+    song_year INT default 0,
+    raw_total INT default 0,
+    raw_usa INT DEFAULT 0,
+    raw_uk INT DEFAULT 0,
+    raw_eur INT DEFAULT 0,
+    raw_row INT DEFAULT 0,
     PRIMARY KEY (id)
-);
+);topsongs_DB

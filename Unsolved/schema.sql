@@ -6,7 +6,7 @@ USE topsongs_DB;
 CREATE TABLE Top5000(
     id INT NOT NULL AUTO_INCREMENT,
     artist VARCHAR(100) NOT NULL,
-    song VARCHAR(45) NOT NULL,
+    song VARCHAR(100) NOT NULL,
     song_year INT default 0,
     raw_total INT default 0,
     raw_usa INT DEFAULT 0,
@@ -14,4 +14,4 @@ CREATE TABLE Top5000(
     raw_eur INT DEFAULT 0,
     raw_row INT DEFAULT 0,
     PRIMARY KEY (id)
-);topsongs_DB
+);
